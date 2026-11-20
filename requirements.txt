@@ -1,0 +1,10 @@
+# tested with Python 3.13.7 (CPU only)
+# predict.py needs only numpy, pandas, scikit-learn, torch
+numpy==2.4.2
+pandas==3.0.2
+scikit-learn==1.8.0
+torch==2.12.0
+# needed to re-run the experiments / retrain (parts 1-5)
+scipy==1.17.1
+wntr==1.5.0
+matplotlib==3.10.9
