@@ -1,0 +1,293 @@
+
+######## W12 seed 0: --W 12
+fold0: val AUROC 0.964
+fold1: val AUROC 0.852
+fold2: val AUROC 0.726
+fold3: val AUROC 0.901
+
+=== W12_s0 ===
+OOF AUROC 0.857   per fold [0.964, 0.852, 0.726, 0.901]   params 61697  train 23s
+alarm rule: mean of p over last 1.0 h > 0.95 for 2.0 h
+detected 20/20 leaks, median delay 9.8 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W12 seed 1: --W 12
+fold0: val AUROC 0.974
+fold1: val AUROC 0.842
+fold2: val AUROC 0.703
+fold3: val AUROC 0.906
+
+=== W12_s1 ===
+OOF AUROC 0.858   per fold [0.974, 0.842, 0.703, 0.906]   params 61697  train 157s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 8.1 h, false alarms 1.79 per 30 days (4/67 leak-free days)
+
+######## W12 seed 2: --W 12
+fold0: val AUROC 0.862
+fold1: val AUROC 0.848
+fold2: val AUROC 0.709
+fold3: val AUROC 0.905
+
+=== W12_s2 ===
+OOF AUROC 0.836   per fold [0.862, 0.848, 0.709, 0.905]   params 61697  train 23s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 11.3 h, false alarms 1.79 per 30 days (4/67 leak-free days)
+
+######## W12 seed 3: --W 12
+fold0: val AUROC 0.972
+fold1: val AUROC 0.842
+fold2: val AUROC 0.712
+fold3: val AUROC 0.901
+
+=== W12_s3 ===
+OOF AUROC 0.859   per fold [0.972, 0.842, 0.712, 0.901]   params 61697  train 24s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 6.8 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W12 seed 4: --W 12
+fold0: val AUROC 0.982
+fold1: val AUROC 0.857
+fold2: val AUROC 0.697
+fold3: val AUROC 0.870
+
+=== W12_s4 ===
+OOF AUROC 0.852   per fold [0.982, 0.857, 0.697, 0.87]   params 61697  train 23s
+alarm rule: mean of p over last 6.0 h > 0.75 for 2.0 h
+detected 20/20 leaks, median delay 8.7 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W6 seed 0: --W 6
+fold0: val AUROC 0.840
+fold1: val AUROC 0.870
+fold2: val AUROC 0.750
+fold3: val AUROC 0.914
+
+=== W6_s0 ===
+OOF AUROC 0.850   per fold [0.84, 0.87, 0.75, 0.914]   params 35585  train 20s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 3.6 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W6 seed 1: --W 6
+fold0: val AUROC 0.891
+fold1: val AUROC 0.878
+fold2: val AUROC 0.750
+fold3: val AUROC 0.921
+
+=== W6_s1 ===
+OOF AUROC 0.853   per fold [0.891, 0.878, 0.75, 0.921]   params 35585  train 21s
+alarm rule: mean of p over last 3.0 h > 0.95
+detected 20/20 leaks, median delay 4.9 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W6 seed 2: --W 6
+fold0: val AUROC 0.929
+fold1: val AUROC 0.872
+fold2: val AUROC 0.761
+fold3: val AUROC 0.899
+
+=== W6_s2 ===
+OOF AUROC 0.863   per fold [0.929, 0.872, 0.761, 0.899]   params 35585  train 23s
+alarm rule: mean of p over last 1.0 h > 0.9
+detected 20/20 leaks, median delay 4.2 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W6 seed 3: --W 6
+fold0: val AUROC 0.766
+fold1: val AUROC 0.881
+fold2: val AUROC 0.754
+fold3: val AUROC 0.909
+
+=== W6_s3 ===
+OOF AUROC 0.848   per fold [0.766, 0.881, 0.754, 0.909]   params 35585  train 21s
+alarm rule: mean of p over last 1.0 h > 0.85
+detected 20/20 leaks, median delay 3.0 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W6 seed 4: --W 6
+fold0: val AUROC 0.788
+fold1: val AUROC 0.867
+fold2: val AUROC 0.732
+fold3: val AUROC 0.916
+
+=== W6_s4 ===
+OOF AUROC 0.839   per fold [0.788, 0.867, 0.732, 0.916]   params 35585  train 21s
+alarm rule: mean of p over last 3.0 h > 0.85
+detected 20/20 leaks, median delay 5.5 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W6_ign2 seed 0: --W 6 --ignore-small 2
+fold0: val AUROC 0.679
+fold1: val AUROC 0.877
+fold2: val AUROC 0.825
+fold3: val AUROC 0.889
+
+=== W6_ign2_s0 ===
+OOF AUROC 0.825   per fold [0.679, 0.877, 0.825, 0.889]   params 35585  train 22s
+alarm rule: mean of p over last 1.0 h > 0.85
+detected 20/20 leaks, median delay 3.0 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W6_ign2 seed 1: --W 6 --ignore-small 2
+fold0: val AUROC 0.686
+fold1: val AUROC 0.885
+fold2: val AUROC 0.830
+fold3: val AUROC 0.890
+
+=== W6_ign2_s1 ===
+OOF AUROC 0.843   per fold [0.686, 0.885, 0.83, 0.89]   params 35585  train 22s
+alarm rule: mean of p over last 1.0 h > 0.7
+detected 20/20 leaks, median delay 2.0 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W6_ign2 seed 2: --W 6 --ignore-small 2
+fold0: val AUROC 0.685
+fold1: val AUROC 0.878
+fold2: val AUROC 0.820
+fold3: val AUROC 0.881
+
+=== W6_ign2_s2 ===
+OOF AUROC 0.817   per fold [0.685, 0.878, 0.82, 0.881]   params 35585  train 21s
+alarm rule: mean of p over last 1.0 h > 0.85
+detected 20/20 leaks, median delay 2.6 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W6_ign2 seed 3: --W 6 --ignore-small 2
+fold0: val AUROC 0.681
+fold1: val AUROC 0.885
+fold2: val AUROC 0.827
+fold3: val AUROC 0.892
+
+=== W6_ign2_s3 ===
+OOF AUROC 0.841   per fold [0.681, 0.885, 0.827, 0.892]   params 35585  train 24s
+alarm rule: mean of p over last 1.0 h > 0.75
+detected 20/20 leaks, median delay 2.0 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W6_ign2 seed 4: --W 6 --ignore-small 2
+fold0: val AUROC 0.688
+fold1: val AUROC 0.883
+fold2: val AUROC 0.828
+fold3: val AUROC 0.894
+
+=== W6_ign2_s4 ===
+OOF AUROC 0.839   per fold [0.688, 0.883, 0.828, 0.894]   params 35585  train 24s
+alarm rule: mean of p over last 1.0 h > 0.65
+detected 20/20 leaks, median delay 2.0 h, false alarms 1.79 per 30 days (4/67 leak-free days)
+
+######## W6_pressure seed 0: --W 6 --inputs pressure
+fold0: val AUROC 0.712
+fold1: val AUROC 0.873
+fold2: val AUROC 0.756
+fold3: val AUROC 0.912
+
+=== W6_pressure_s0 ===
+OOF AUROC 0.845   per fold [0.712, 0.873, 0.756, 0.912]   params 34817  train 23s
+alarm rule: mean of p over last 1.0 h > 0.9
+detected 20/20 leaks, median delay 2.8 h, false alarms 0.90 per 30 days (2/67 leak-free days)
+
+######## W6_pressure seed 1: --W 6 --inputs pressure
+fold0: val AUROC 0.745
+fold1: val AUROC 0.874
+fold2: val AUROC 0.753
+fold3: val AUROC 0.905
+
+=== W6_pressure_s1 ===
+OOF AUROC 0.835   per fold [0.745, 0.874, 0.753, 0.905]   params 34817  train 18s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 4.7 h, false alarms 1.79 per 30 days (4/67 leak-free days)
+
+######## W6_pressure seed 2: --W 6 --inputs pressure
+fold0: val AUROC 0.966
+fold1: val AUROC 0.870
+fold2: val AUROC 0.736
+fold3: val AUROC 0.895
+
+=== W6_pressure_s2 ===
+OOF AUROC 0.868   per fold [0.966, 0.87, 0.736, 0.895]   params 34817  train 19s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 3.5 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W6_pressure seed 3: --W 6 --inputs pressure
+fold0: val AUROC 0.707
+fold1: val AUROC 0.869
+fold2: val AUROC 0.747
+fold3: val AUROC 0.908
+
+=== W6_pressure_s3 ===
+OOF AUROC 0.820   per fold [0.707, 0.869, 0.747, 0.908]   params 34817  train 17s
+alarm rule: mean of p over last 6.0 h > 0.75 for 2.0 h
+detected 20/20 leaks, median delay 9.3 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W6_pressure seed 4: --W 6 --inputs pressure
+fold0: val AUROC 0.978
+fold1: val AUROC 0.877
+fold2: val AUROC 0.744
+fold3: val AUROC 0.902
+
+=== W6_pressure_s4 ===
+OOF AUROC 0.869   per fold [0.978, 0.877, 0.744, 0.902]   params 34817  train 16s
+alarm rule: mean of p over last 3.0 h > 0.8
+detected 20/20 leaks, median delay 4.7 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W6_deep seed 0: --W 6 --hidden 256,128,64
+fold0: val AUROC 0.904
+fold1: val AUROC 0.867
+fold2: val AUROC 0.760
+fold3: val AUROC 0.909
+
+=== W6_deep_s0 ===
+OOF AUROC 0.864   per fold [0.904, 0.867, 0.76, 0.909]   params 95873  train 32s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 3.4 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W6_deep seed 1: --W 6 --hidden 256,128,64
+fold0: val AUROC 0.990
+fold1: val AUROC 0.872
+fold2: val AUROC 0.750
+fold3: val AUROC 0.922
+
+=== W6_deep_s1 ===
+OOF AUROC 0.882   per fold [0.99, 0.872, 0.75, 0.922]   params 95873  train 35s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 2.8 h, false alarms 1.34 per 30 days (3/67 leak-free days)
+
+######## W6_deep seed 2: --W 6 --hidden 256,128,64
+fold0: val AUROC 0.874
+fold1: val AUROC 0.868
+fold2: val AUROC 0.756
+fold3: val AUROC 0.907
+
+=== W6_deep_s2 ===
+OOF AUROC 0.869   per fold [0.874, 0.868, 0.756, 0.907]   params 95873  train 35s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 3.0 h, false alarms 1.34 per 30 days (3/67 leak-free days)
+
+######## W6_deep seed 3: --W 6 --hidden 256,128,64
+fold0: val AUROC 0.970
+fold1: val AUROC 0.871
+fold2: val AUROC 0.752
+fold3: val AUROC 0.916
+
+=== W6_deep_s3 ===
+OOF AUROC 0.880   per fold [0.97, 0.871, 0.752, 0.916]   params 95873  train 32s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 3.0 h, false alarms 0.90 per 30 days (2/67 leak-free days)
+
+######## W6_deep seed 4: --W 6 --hidden 256,128,64
+fold0: val AUROC 0.941
+fold1: val AUROC 0.874
+fold2: val AUROC 0.761
+fold3: val AUROC 0.905
+
+=== W6_deep_s4 ===
+OOF AUROC 0.866   per fold [0.941, 0.874, 0.761, 0.905]   params 95873  train 32s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 20/20 leaks, median delay 3.0 h, false alarms 1.79 per 30 days (4/67 leak-free days)
+
+=== single models: mean ± std over 5 seeds ===
+                     AUROC    detected        delay_h false_alarm_30d  params
+design                                                                       
+W12           0.852 ± 0.01  20.0 ± 0.0  8.933 ± 1.731   2.239 ± 0.448   61697
+W6           0.851 ± 0.009  20.0 ± 0.0  4.258 ± 0.982   2.418 ± 0.245   35585
+W6_ign2      0.833 ± 0.011  20.0 ± 0.0  2.308 ± 0.443   2.418 ± 0.401   35585
+W6_pressure  0.847 ± 0.021  20.0 ± 0.0  5.025 ± 2.538    1.97 ± 0.679   34817
+W6_deep      0.872 ± 0.008  20.0 ± 0.0  3.067 ± 0.224   1.612 ± 0.679   95873
+
+=== 5-seed ensemble (average p), alarm rule tuned on it ===
+             ens_AUROC  ens_detected  ens_delay_h  ens_false_alarm_30d        ens_rule
+design                                                                                
+W12              0.860            20       11.000                1.791   mean 3h > 0.9
+W6               0.857            20        3.875                2.239   mean 1h > 0.9
+W6_ign2          0.836            20        2.000                2.239   mean 1h > 0.7
+W6_pressure      0.863            20        4.250                2.687  mean 1h > 0.85
+W6_deep          0.883            20        3.375                0.448  mean 1h > 0.95

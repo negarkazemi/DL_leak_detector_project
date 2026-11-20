@@ -1,0 +1,43 @@
+
+######## prior: --model prior
+
+######## nearest: --model nearest
+
+######## nearest_change: --model nearest --mode change
+
+######## real: --data real
+
+######## both: --data both
+
+######## syn: --data syn
+
+######## both_change: --data both --mode change
+
+######## both_w24: --data both --windows 24
+
+######## both_w1-6-24: --data both --windows 1,6,24
+
+######## both_small: --data both --hidden 32
+
+######## both_deep: --data both --hidden 256,128,64
+
+######## both_cw: --data both --class-weight
+
+######## both_copies12: --data both --copies 12
+
+######## both_minflow5: --data both --min-flow 5
+          name  n_inputs  params  n_real_train  n_syn_train  search_effort  top1  search_effort_oracle  top1_oracle  train_s
+         prior        69       0             0            0          0.554 0.200                 0.554        0.200      0.0
+       nearest        69       0             0            0          0.232 0.528                 0.251        0.534      0.0
+nearest_change        69       0             0            0          0.248 0.545                 0.278        0.461      0.0
+          real        69   18900         54544            0          0.338 0.534                 0.356        0.498     11.2
+          both        69   18900         54544        70402          0.155 0.742                 0.171        0.707     27.6
+           syn        69   18900             0        70402          0.198 0.709                 0.213        0.669     12.8
+   both_change        69   18900         54544        70402          0.252 0.524                 0.268        0.505     25.4
+      both_w24        35   14548         54544        70402          0.178 0.732                 0.201        0.694     23.2
+  both_w1-6-24       103   23252         54544        70402          0.137 0.752                 0.157        0.716     24.1
+    both_small        69    2964         54544        70402          0.174 0.745                 0.179        0.728      9.7
+     both_deep        69   61268         54544        70402          0.141 0.768                 0.157        0.728     45.4
+       both_cw        69   18900         54544        70402          0.149 0.754                 0.163        0.714     23.8
+ both_copies12        69   18900         54544       141600          0.137 0.787                 0.146        0.759     30.1
+ both_minflow5        69   18900         44017        67646          0.154 0.735                 0.169        0.703     15.7

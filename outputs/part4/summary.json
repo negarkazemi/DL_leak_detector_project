@@ -1,0 +1,29 @@
+{
+  "test1": {
+    "n_usable": 18,
+    "median_cos_centred": 0.9876728332950455,
+    "median_cos_raw": 0.9949896281722422,
+    "share_cos_centred_ge_threshold": 0.8333333333333334,
+    "median_ratio_raw": 1.3730898259160584,
+    "median_rank_true_cluster": 1.0,
+    "share_true_cluster_top1": 0.7222222222222222,
+    "share_true_cluster_top3": 0.8888888888888888,
+    "H1_holds": true
+  },
+  "test2": {
+    "se_syn_only_ens": 0.1371399217297536,
+    "top1_syn_only_ens": 0.7842339382934914,
+    "se_real_syn_ens": 0.1297216511946054,
+    "top1_real_syn_ens": 0.7997448999869363,
+    "se_syn_only_single": [
+      0.1551999999999999,
+      0.0267151642330718
+    ],
+    "se_nearest": 0.21888609877910623,
+    "top1_nearest": 0.5711887703066465,
+    "H2_holds": true
+  },
+  "criteria": {
+    "cos_threshold": 0.7
+  }
+}

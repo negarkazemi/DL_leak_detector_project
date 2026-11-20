@@ -1,0 +1,12 @@
+preprocessing fitted on 19067 leak-free rows
+detector seed 0: 35585 params, 15s
+detector seed 1: 35585 params, 12s
+detector seed 2: 35585 params, 12s
+detector seed 3: 35585 params, 11s
+detector seed 4: 35585 params, 11s
+localiser seed 0: 18181 real + 50932 synthetic rows, 18900 params, 16s
+localiser seed 1: 18181 real + 49702 synthetic rows, 18900 params, 18s
+localiser seed 2: 18181 real + 49073 synthetic rows, 18900 params, 18s
+localiser seed 3: 18181 real + 49958 synthetic rows, 18900 params, 16s
+localiser seed 4: 18181 real + 50764 synthetic rows, 18900 params, 18s
+saved to C:\Users\maral\OneDrive\Desktop\uni\semester 7\deep learning\project\DL_P1 (1)\DL_P1\models in 3.8 min

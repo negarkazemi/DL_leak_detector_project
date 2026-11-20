@@ -1,0 +1,74 @@
+block  AUROC detected  delay_h  false_alarm_30d  search_effort  top1
+fold0  0.993      5/5    2.750              0.0          0.121 0.654
+fold1  0.892      4/4   88.042              0.0          0.115 0.834
+fold2  0.771      3/3  298.000              2.0          0.092 1.000
+fold3  0.925      8/8    4.500              0.0          0.156 0.799
+{
+  "basis": "out-of-fold predictions of the frozen designs (4 event-aligned time blocks of 2018); 90% bootstrap intervals (leak events / leak-free days / day blocks)",
+  "AUROC": {
+    "expected": 0.8985155906482147,
+    "interval_90": [
+      0.8762012085867745,
+      0.9163171969105205
+    ]
+  },
+  "detected_share": {
+    "expected": 1.0,
+    "interval_90": [
+      0.8608916593317347,
+      1.0
+    ],
+    "note": "20/20 in 2018; exact binomial (Clopper-Pearson) interval, because the bootstrap is degenerate when every leak is detected"
+  },
+  "detection_delay_median_h": {
+    "expected": 3.583333333333333,
+    "interval_90": [
+      2.75,
+      10.333333333333334
+    ]
+  },
+  "false_alarms_per_30_days": {
+    "expected": 0.44776119402985076,
+    "interval_90": [
+      0.0,
+      1.3432835820895521
+    ],
+    "note": "1 of 67 leak-free days"
+  },
+  "search_effort": {
+    "expected": 0.12973912682672667,
+    "interval_90": [
+      0.09972353480468141,
+      0.1632304613536132
+    ]
+  },
+  "top1_accuracy": {
+    "expected": 0.7997448999869363,
+    "interval_90": [
+      0.6717208822006963,
+      0.9109841625060441
+    ]
+  },
+  "per_cv_block_range": {
+    "AUROC": [
+      0.7707616827818122,
+      0.9929519876505472
+    ],
+    "delay_h": [
+      2.75,
+      298.0
+    ],
+    "false_alarm_30d": [
+      0.0,
+      2.0
+    ],
+    "search_effort": [
+      0.09208103130755065,
+      0.15626409891994353
+    ],
+    "top1": [
+      0.6538324058922772,
+      1.0
+    ]
+  }
+}

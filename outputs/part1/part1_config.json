@@ -1,0 +1,20 @@
+{
+  "K": 20,
+  "centered": true,
+  "snr_threshold": 1.0,
+  "snr_diameter": 0.015,
+  "ref_diameter": 0.015,
+  "n_undetectable": 5,
+  "undetectable_cluster": 19,
+  "clusters_without_real_leak": [
+    5,
+    8,
+    10,
+    12,
+    15,
+    16,
+    17,
+    18,
+    19
+  ]
+}

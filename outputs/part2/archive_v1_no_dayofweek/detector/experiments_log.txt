@@ -1,0 +1,167 @@
+
+######## score_water: --model score --inputs water
+fold0: val AUROC 0.966
+fold1: val AUROC 0.801
+fold2: val AUROC 0.685
+fold3: val AUROC 0.843
+
+=== score_water ===
+OOF AUROC 0.785   per fold [0.966, 0.801, 0.685, 0.843]   params 0  train 0s
+alarm rule: mean of p over last 1.0 h > 0.85
+detected 13/20 leaks, median delay 68.7 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## score_all: --model score --inputs all
+fold0: val AUROC 0.966
+fold1: val AUROC 0.798
+fold2: val AUROC 0.681
+fold3: val AUROC 0.867
+
+=== score_all ===
+OOF AUROC 0.797   per fold [0.966, 0.798, 0.681, 0.867]   params 0  train 0s
+alarm rule: mean of p over last 6.0 h > 0.95 for 6.0 h
+detected 13/20 leaks, median delay 24.5 h, false alarms 3.58 per 30 days (8/67 leak-free days)
+
+######## logreg: --model logreg
+fold0: val AUROC 0.674
+fold1: val AUROC 0.872
+fold2: val AUROC 0.622
+fold3: val AUROC 0.638
+
+=== logreg ===
+OOF AUROC 0.713   per fold [0.674, 0.872, 0.622, 0.638]   params 412  train 0s
+alarm rule: mean of p over last 1.0 h > 0.9
+detected 17/20 leaks, median delay 3.5 h, false alarms 1.79 per 30 days (4/67 leak-free days)
+
+######## raw_none: --baseline none
+fold0: val AUROC 0.662
+fold1: val AUROC 0.855
+fold2: val AUROC 0.677
+fold3: val AUROC 0.871
+
+=== raw_none ===
+OOF AUROC 0.775   per fold [0.662, 0.855, 0.677, 0.871]   params 61441  train 31s
+alarm rule: mean of p over last 1.0 h > 0.9
+detected 18/20 leaks, median delay 8.6 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## base_week: --baseline week
+fold0: val AUROC 0.754
+fold1: val AUROC 0.847
+fold2: val AUROC 0.659
+fold3: val AUROC 0.955
+
+=== base_week ===
+OOF AUROC 0.826   per fold [0.754, 0.847, 0.659, 0.955]   params 61441  train 32s
+alarm rule: mean of p over last 6.0 h > 0.9
+detected 19/20 leaks, median delay 9.5 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## only_pressure: --inputs pressure
+fold0: val AUROC 0.945
+fold1: val AUROC 0.849
+fold2: val AUROC 0.689
+fold3: val AUROC 0.884
+
+=== only_pressure ===
+OOF AUROC 0.835   per fold [0.945, 0.849, 0.689, 0.884]   params 59905  train 16s
+alarm rule: mean of p over last 3.0 h > 0.95
+detected 19/20 leaks, median delay 8.1 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W1: --W 1
+fold0: val AUROC 0.805
+fold1: val AUROC 0.865
+fold2: val AUROC 0.724
+fold3: val AUROC 0.858
+
+=== W1 ===
+OOF AUROC 0.820   per fold [0.805, 0.865, 0.724, 0.858]   params 13569  train 12s
+alarm rule: mean of p over last 1.0 h > 0.85
+detected 20/20 leaks, median delay 1.2 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W6: --W 6
+fold0: val AUROC 0.903
+fold1: val AUROC 0.871
+fold2: val AUROC 0.787
+fold3: val AUROC 0.912
+
+=== W6 ===
+OOF AUROC 0.870   per fold [0.903, 0.871, 0.787, 0.912]   params 35329  train 13s
+alarm rule: mean of p over last 1.0 h > 0.85
+detected 20/20 leaks, median delay 2.5 h, false alarms 1.79 per 30 days (4/67 leak-free days)
+
+######## W24: --W 24
+fold0: val AUROC 0.767
+fold1: val AUROC 0.820
+fold2: val AUROC 0.673
+fold3: val AUROC 0.849
+
+=== W24 ===
+OOF AUROC 0.791   per fold [0.767, 0.82, 0.673, 0.849]   params 113665  train 19s
+alarm rule: mean of p over last 12.0 h > 0.9
+detected 19/20 leaks, median delay 16.0 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W24_multi: --W 24 --mode multiscale
+fold0: val AUROC 0.671
+fold1: val AUROC 0.819
+fold2: val AUROC 0.667
+fold3: val AUROC 0.852
+
+=== W24_multi ===
+OOF AUROC 0.766   per fold [0.671, 0.819, 0.667, 0.852]   params 30977  train 16s
+alarm rule: mean of p over last 1.0 h > 0.95 for 2.0 h
+detected 17/20 leaks, median delay 6.8 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## mlp_small: --hidden 32
+fold0: val AUROC 0.674
+fold1: val AUROC 0.867
+fold2: val AUROC 0.782
+fold3: val AUROC 0.817
+
+=== mlp_small ===
+OOF AUROC 0.796   per fold [0.674, 0.867, 0.782, 0.817]   params 13281  train 12s
+alarm rule: mean of p over last 6.0 h > 0.65 for 2.0 h
+detected 18/20 leaks, median delay 7.5 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## mlp_deep: --hidden 256,128,64
+fold0: val AUROC 0.978
+fold1: val AUROC 0.838
+fold2: val AUROC 0.712
+fold3: val AUROC 0.869
+
+=== mlp_deep ===
+OOF AUROC 0.848   per fold [0.978, 0.838, 0.712, 0.869]   params 147585  train 50s
+alarm rule: mean of p over last 3.0 h > 0.9 for 2.0 h
+detected 20/20 leaks, median delay 12.2 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## ignore_small2: --ignore-small 2
+fold0: val AUROC 0.680
+fold1: val AUROC 0.875
+fold2: val AUROC 0.794
+fold3: val AUROC 0.907
+
+=== ignore_small2 ===
+OOF AUROC 0.820   per fold [0.68, 0.875, 0.794, 0.907]   params 61441  train 29s
+alarm rule: mean of p over last 1.0 h > 0.9
+detected 20/20 leaks, median delay 2.8 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## time_split: --split time
+time: val AUROC 0.968
+
+=== time_split ===
+OOF AUROC 0.968   per fold [0.968]   params 61441  train 8s
+alarm rule: mean of p over last 1.0 h > 0.3
+detected 6/6 leaks, median delay 0.0 h, false alarms 0.00 per 30 days (0/8 leak-free days)
+                    name  n_inputs  params  AUROC                   fold_auroc  detected  n_leaks  delay_h  false_alarm_30d  alarm_smooth_h  alarm_thr  alarm_persist_h  train_s
+mlp_amr_all_W12l_h128-64     411.0   61441  0.833 [0.791, 0.842, 0.685, 0.912]        19       20    6.750            2.687             3.0       0.90              2.0     32.3
+             score_water       NaN       0  0.785 [0.966, 0.801, 0.685, 0.843]        13       20   68.667            2.239             1.0       0.85              0.0      0.0
+               score_all       NaN       0  0.797 [0.966, 0.798, 0.681, 0.867]        13       20   24.500            3.582             6.0       0.95              6.0      0.0
+                  logreg     411.0     412  0.713 [0.674, 0.872, 0.622, 0.638]        17       20    3.500            1.791             1.0       0.90              0.0      0.0
+                raw_none     411.0   61441  0.775 [0.662, 0.855, 0.677, 0.871]        18       20    8.625            2.239             1.0       0.90              0.0     31.2
+               base_week     411.0   61441  0.826 [0.754, 0.847, 0.659, 0.955]        19       20    9.500            2.239             6.0       0.90              0.0     32.3
+           only_pressure     399.0   59905  0.835 [0.945, 0.849, 0.689, 0.884]        19       20    8.083            2.239             3.0       0.95              0.0     15.7
+                      W1      37.0   13569  0.820 [0.805, 0.865, 0.724, 0.858]        20       20    1.208            2.239             1.0       0.85              0.0     11.6
+                      W6     207.0   35329  0.870 [0.903, 0.871, 0.787, 0.912]        20       20    2.458            1.791             1.0       0.85              0.0     12.6
+                     W24     819.0  113665  0.791  [0.767, 0.82, 0.673, 0.849]        19       20   16.000            2.239            12.0       0.90              0.0     18.6
+               W24_multi     173.0   30977  0.766 [0.671, 0.819, 0.667, 0.852]        17       20    6.750            2.687             1.0       0.95              2.0     15.5
+               mlp_small     411.0   13281  0.796 [0.674, 0.867, 0.782, 0.817]        18       20    7.542            2.687             6.0       0.65              2.0     12.1
+                mlp_deep     411.0  147585  0.848 [0.978, 0.838, 0.712, 0.869]        20       20   12.167            2.687             3.0       0.90              2.0     50.2
+           ignore_small2     411.0   61441  0.820  [0.68, 0.875, 0.794, 0.907]        20       20    2.750            2.687             1.0       0.90              0.0     28.7
+              time_split     411.0   61441  0.968                      [0.968]         6        6    0.000            0.000             1.0       0.30              0.0      8.3

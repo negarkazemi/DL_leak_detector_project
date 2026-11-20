@@ -1,0 +1,110 @@
+
+######## W6_syn seed 0: --W 6 --syn-copies 3
+fold0: val AUROC 0.993
+fold1: val AUROC 0.892
+fold2: val AUROC 0.782
+fold3: val AUROC 0.916
+
+=== W6_syn_s0 ===
+OOF AUROC 0.899   per fold [0.993, 0.892, 0.782, 0.916]   params 35585  train 22s
+alarm rule: mean of p over last 1.0 h > 0.85
+detected 20/20 leaks, median delay 2.6 h, false alarms 1.79 per 30 days (4/67 leak-free days)
+
+######## W6_syn seed 1: --W 6 --syn-copies 3
+fold0: val AUROC 0.992
+fold1: val AUROC 0.885
+fold2: val AUROC 0.807
+fold3: val AUROC 0.917
+
+=== W6_syn_s1 ===
+OOF AUROC 0.905   per fold [0.992, 0.885, 0.807, 0.917]   params 35585  train 24s
+alarm rule: mean of p over last 1.0 h > 0.85
+detected 20/20 leaks, median delay 2.9 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W6_syn seed 2: --W 6 --syn-copies 3
+fold0: val AUROC 0.993
+fold1: val AUROC 0.894
+fold2: val AUROC 0.729
+fold3: val AUROC 0.927
+
+=== W6_syn_s2 ===
+OOF AUROC 0.892   per fold [0.993, 0.894, 0.729, 0.927]   params 35585  train 25s
+alarm rule: mean of p over last 1.0 h > 0.55 for 6.0 h
+detected 20/20 leaks, median delay 6.8 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W6_syn seed 3: --W 6 --syn-copies 3
+fold0: val AUROC 0.995
+fold1: val AUROC 0.897
+fold2: val AUROC 0.770
+fold3: val AUROC 0.930
+
+=== W6_syn_s3 ===
+OOF AUROC 0.902   per fold [0.995, 0.897, 0.77, 0.93]   params 35585  train 134s
+alarm rule: mean of p over last 1.0 h > 0.75
+detected 20/20 leaks, median delay 1.9 h, false alarms 2.69 per 30 days (6/67 leak-free days)
+
+######## W6_syn seed 4: --W 6 --syn-copies 3
+fold0: val AUROC 0.992
+fold1: val AUROC 0.876
+fold2: val AUROC 0.742
+fold3: val AUROC 0.922
+
+=== W6_syn_s4 ===
+OOF AUROC 0.868   per fold [0.992, 0.876, 0.742, 0.922]   params 35585  train 70s
+alarm rule: mean of p over last 1.0 h > 0.9
+detected 20/20 leaks, median delay 2.8 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W12_syn seed 1: --W 12 --syn-copies 3
+fold0: val AUROC 0.987
+fold1: val AUROC 0.871
+fold2: val AUROC 0.758
+fold3: val AUROC 0.924
+
+=== W12_syn_s1 ===
+OOF AUROC 0.888   per fold [0.987, 0.871, 0.758, 0.924]   params 61697  train 76s
+alarm rule: mean of p over last 1.0 h > 0.75
+detected 20/20 leaks, median delay 3.5 h, false alarms 1.79 per 30 days (4/67 leak-free days)
+
+######## W12_syn seed 2: --W 12 --syn-copies 3
+fold0: val AUROC 0.985
+fold1: val AUROC 0.883
+fold2: val AUROC 0.736
+fold3: val AUROC 0.908
+
+=== W12_syn_s2 ===
+OOF AUROC 0.874   per fold [0.985, 0.883, 0.736, 0.908]   params 61697  train 153s
+alarm rule: mean of p over last 1.0 h > 0.95
+detected 19/20 leaks, median delay 5.7 h, false alarms 2.24 per 30 days (5/67 leak-free days)
+
+######## W12_syn seed 4: --W 12 --syn-copies 3
+fold0: val AUROC 0.983
+fold1: val AUROC 0.875
+fold2: val AUROC 0.752
+fold3: val AUROC 0.918
+
+=== W12_syn_s4 ===
+OOF AUROC 0.883   per fold [0.983, 0.875, 0.752, 0.918]   params 61697  train 330s
+alarm rule: mean of p over last 1.0 h > 0.9
+detected 20/20 leaks, median delay 3.9 h, false alarms 1.34 per 30 days (3/67 leak-free days)
+
+=== single models: mean ± std over 5 seeds ===
+                     AUROC      detected        delay_h false_alarm_30d  params
+design                                                                         
+W12           0.852 ± 0.01    20.0 ± 0.0  8.933 ± 1.731   2.239 ± 0.448   61697
+W6           0.851 ± 0.009    20.0 ± 0.0  4.258 ± 0.982   2.418 ± 0.245   35585
+W6_ign2      0.833 ± 0.011    20.0 ± 0.0  2.308 ± 0.443   2.418 ± 0.401   35585
+W6_pressure  0.847 ± 0.021    20.0 ± 0.0  5.025 ± 2.538    1.97 ± 0.679   34817
+W6_deep      0.872 ± 0.008    20.0 ± 0.0  3.067 ± 0.224   1.612 ± 0.679   95873
+W6_syn       0.893 ± 0.015    20.0 ± 0.0    3.4 ± 1.956   2.329 ± 0.375   35585
+W12_syn      0.881 ± 0.006  19.8 ± 0.447  4.408 ± 1.085   2.149 ± 0.584   61697
+
+=== 5-seed ensemble (average p), alarm rule tuned on it ===
+             ens_AUROC  ens_detected  ens_delay_h  ens_false_alarm_30d               ens_rule
+design                                                                                       
+W12              0.860            20       11.000                1.791          mean 3h > 0.9
+W6               0.857            20        3.875                2.239          mean 1h > 0.9
+W6_ign2          0.836            20        2.000                2.239          mean 1h > 0.7
+W6_pressure      0.863            20        4.250                2.687         mean 1h > 0.85
+W6_deep          0.883            20        3.375                0.448         mean 1h > 0.95
+W6_syn           0.899            20        2.167                2.687          mean 1h > 0.8
+W12_syn          0.889            20        6.167                2.687  mean 3h > 0.75 for 2h

@@ -1,0 +1,2 @@
+wrote 105120 rows to C:/Users/maral/AppData/Local/Temp/claude/9e7f8a3b5fb84c5c/9cb09773-9030-4af5-a5f0-9e91e538ce42/scratchpad/pred_full.csv (62.4% with alarm) in 6.3s
+wrote 17478 rows to C:/Users/maral/AppData/Local/Temp/claude/9e7f8a3b5fb84c5c/9cb09773-9030-4af5-a5f0-9e91e538ce42/scratchpad/pred_slice.csv (84.7% with alarm) in 1.3s

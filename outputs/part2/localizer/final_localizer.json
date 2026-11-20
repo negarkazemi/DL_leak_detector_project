@@ -1,0 +1,22 @@
+{
+  "design": "L_copies12",
+  "args": "--data both --copies 12",
+  "n_seeds_ensemble": 5,
+  "oof_metrics_ensemble": {
+    "search_effort": 0.1297216511946054,
+    "top1": 0.7997448999869363,
+    "search_effort_oracle": 0.1385713277809712,
+    "top1_oracle": 0.7693180288896697
+  },
+  "single_model_mean_std": {
+    "search_effort": [
+      0.1426,
+      0.0181190507477626
+    ],
+    "top1": [
+      0.7756000000000001,
+      0.0340044114785126
+    ]
+  },
+  "scored_with_detector": "W6_syn ensemble, frozen rule"
+}

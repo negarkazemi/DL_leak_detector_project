@@ -1,0 +1,9 @@
+
+with final detector: search effort 0.338  top-1 0.534
+oracle (all leak steps): search effort 0.356  top-1 0.498
+
+with final detector: search effort 0.155  top-1 0.742
+oracle (all leak steps): search effort 0.171  top-1 0.707
+
+with final detector: search effort 0.198  top-1 0.709
+oracle (all leak steps): search effort 0.213  top-1 0.669

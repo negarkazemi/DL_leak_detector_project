@@ -1,0 +1,50 @@
+######## L_base seed 0: --data both
+######## L_base seed 1: --data both
+######## L_base seed 2: --data both
+######## L_base seed 3: --data both
+######## L_base seed 4: --data both
+######## L_w1-6-24 seed 0: --data both --windows 1,6,24
+######## L_w1-6-24 seed 1: --data both --windows 1,6,24
+######## L_w1-6-24 seed 2: --data both --windows 1,6,24
+######## L_w1-6-24 seed 3: --data both --windows 1,6,24
+######## L_w1-6-24 seed 4: --data both --windows 1,6,24
+######## L_deep seed 0: --data both --hidden 256,128,64
+######## L_deep seed 1: --data both --hidden 256,128,64
+######## L_deep seed 2: --data both --hidden 256,128,64
+######## L_deep seed 3: --data both --hidden 256,128,64
+######## L_deep seed 4: --data both --hidden 256,128,64
+######## L_copies12 seed 0: --data both --copies 12
+######## L_copies12 seed 1: --data both --copies 12
+######## L_copies12 seed 2: --data both --copies 12
+######## L_copies12 seed 3: --data both --copies 12
+######## L_copies12 seed 4: --data both --copies 12
+######## L_combo seed 0: --data both --windows 1,6,24 --hidden 256,128,64 --copies 12
+######## L_combo seed 1: --data both --windows 1,6,24 --hidden 256,128,64 --copies 12
+######## L_combo seed 2: --data both --windows 1,6,24 --hidden 256,128,64 --copies 12
+######## L_combo seed 3: --data both --windows 1,6,24 --hidden 256,128,64 --copies 12
+######## L_combo seed 4: --data both --windows 1,6,24 --hidden 256,128,64 --copies 12
+######## L_syn seed 0: --data syn
+######## L_syn seed 1: --data syn
+######## L_syn seed 2: --data syn
+######## L_syn seed 3: --data syn
+######## L_syn seed 4: --data syn
+
+=== single models: mean ± std over 5 seeds ===
+            search_effort           top1 search_effort_oracle    top1_oracle  params
+design                                                                              
+L_base      0.152 ± 0.017  0.727 ± 0.036         0.16 ± 0.014  0.703 ± 0.033   18900
+L_w1-6-24   0.149 ± 0.016  0.724 ± 0.032        0.157 ± 0.012  0.703 ± 0.034   23252
+L_deep       0.15 ± 0.015  0.729 ± 0.044        0.159 ± 0.011  0.701 ± 0.041   61268
+L_copies12  0.147 ± 0.018  0.762 ± 0.035        0.155 ± 0.017   0.74 ± 0.035   18900
+L_combo      0.15 ± 0.014  0.761 ± 0.038        0.161 ± 0.014  0.728 ± 0.031   69972
+L_syn       0.164 ± 0.026  0.707 ± 0.036        0.172 ± 0.027  0.683 ± 0.031   18900
+
+=== 5-seed ensemble ===
+            ens_search_effort  ens_top1  ens_search_effort_oracle  ens_top1_oracle
+design                                                                            
+L_base                  0.137     0.763                     0.141            0.745
+L_w1-6-24               0.137     0.758                     0.140            0.739
+L_deep                  0.138     0.769                     0.141            0.748
+L_copies12              0.135     0.789                     0.139            0.769
+L_combo                 0.134     0.793                     0.141            0.761
+L_syn                   0.145     0.768                     0.146            0.757

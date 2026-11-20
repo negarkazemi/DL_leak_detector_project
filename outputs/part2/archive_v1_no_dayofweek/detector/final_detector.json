@@ -1,0 +1,20 @@
+{
+  "design": "W6",
+  "args": "--W 6",
+  "n_seeds_ensemble": 5,
+  "alarm_rule": {
+    "smooth_h": 3.0,
+    "thr": 0.85,
+    "persist_h": 0.0
+  },
+  "max_fa_30d_budget": 1.0,
+  "oof_metrics": {
+    "AUROC": 0.8772850442385027,
+    "n_leaks": 20.0,
+    "detected": 20.0,
+    "delay_h": 4.25,
+    "fa_days": 2.0,
+    "n_free_days": 67.0,
+    "false_alarm_30d": 0.8955223880597015
+  }
+}
